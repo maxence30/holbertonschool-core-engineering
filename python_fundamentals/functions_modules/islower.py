@@ -1,9 +1,7 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 def islower(c):
     """
-    Retourne True si c est une lettre minuscule, False sinon.
+    Vérifie si un caractère est une lettre minuscule.
+    Retourne True si c est entre 'a' et 'z', sinon False.
     """
-    if len(c) != 1:
-        return False
-
     return ord('a') <= ord(c) <= ord('z')
