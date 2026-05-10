@@ -1,11 +1,8 @@
-#!/usr/bin/python3
-def pow(a, b):
-    """
-    Retourne a élevé à la puissance b.
-    """
-    result = 1
+#!/usr/bin/env python3
+from add_0 import add
 
-    for _ in range(b):
-        result *= a
-
-    return result
+if __name__ == "__main__":
+    a = 1
+    b = 2
+    print("{} + {} = {}".format(a, b, add(a, b)))
+    
